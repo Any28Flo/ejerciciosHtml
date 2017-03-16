@@ -4,7 +4,7 @@
 	<title>EJERCICIO 2 </title>
 </head>
 <body>
-	<table style="width: 100%">
+	<table style="width: 100%" border="5">
 		
 	<tr>
 		<th>Farenheit</th>
@@ -12,26 +12,27 @@
 			<label > </label>
 			<input type="number" name="numTel">
 		</p></th>
-		<th><button title="Enviar">Convertir a Celsius</button></th>
+		<th><button>Convertir a Celsius</button></th>
 	</tr>
 	<tr>
 		<th>Celsius</th>
 		<th><p>
 			<label > </label>
-			<input type="number" name="celsius">
+			<input type="number" name="celsius" id ="gradosCelcius">
 		</p></th>
-		<th><button title="Enviar" onclick="convCelsius()">Convertir a Celsius</button></th>
+		<th><input type="button" onclick= "convierteGrados()" value="Convertir a Farenheit"> </th>
 	</tr>
 		
 	</table>
+	<script >
+		
+		function convierteGrados(){
 
-	<script>
-	varfuction convCelsius(){
-
-			var celsius =getElementsByTagName("celsius");
-			console.log(celsius);
+			var grados = document.getElementById("gradosCelcius");
+			console.log(grados);
+			return grados * 9 /5;
 		}
-
 	</script>
+	
 </body>
 </html>
