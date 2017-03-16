@@ -9,7 +9,7 @@
 	<tr>
 		<th>Farenheit</th>
 		<th><p>
-			<label for="numTelefonico"> </label>
+			<label > </label>
 			<input type="number" name="numTel">
 		</p></th>
 		<th><button title="Enviar">Convertir a Celsius</button></th>
@@ -17,12 +17,21 @@
 	<tr>
 		<th>Celsius</th>
 		<th><p>
-			<label for="numTelefonico"> </label>
-			<input type="number" name="numTel">
+			<label > </label>
+			<input type="number" name="celsius">
 		</p></th>
-		<th><button title="Enviar">Convertir a Celsius</button></th>
+		<th><button title="Enviar" onclick="convCelsius()">Convertir a Celsius</button></th>
 	</tr>
 		
 	</table>
+
+	<script>
+	varfuction convCelsius(){
+
+			var celsius =getElementsByTagName("celsius");
+			console.log(celsius);
+		}
+
+	</script>
 </body>
 </html>
