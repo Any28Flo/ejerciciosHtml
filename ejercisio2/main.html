@@ -4,34 +4,32 @@
 	<title>EJERCICIO 2 </title>
 </head>
 <body>
-	<table style="width: 100%" border="5">
+	<table  border="5">
 		
 	<tr>
 		<th>Farenheit</th>
 		<th><p>
 			<label > </label>
-			<input type="number" name="numTel">
+			<input type="number"" id ="faren" >
 		</p></th>
-		<th><button>Convertir a Celsius</button></th>
+		<th><input type="button"  onclick="convierteFraren();"  value="Convertir a Celcius"></th>
 	</tr>
 	<tr>
 		<th>Celsius</th>
 		<th><p>
 			<label > </label>
-			<input type="number" name="celsius" id ="gradosCelcius">
+			<input type="number"  id ="gradosCelcius">
 		</p></th>
-		<th><input type="button" onclick= "convierteGrados()" value="Convertir a Farenheit"> </th>
+		<th><input type="button" onclick= "convierteGrados();" value="Convertir a Farenheit"> </th>
 	</tr>
 		
 	</table>
-	<script >
+	<p></p>
+	<label ><strong>Resultado</strong></label>
+	<input type="texto" name="resConvertir" id="resultado">
+	<script  src= "js/convierteGrados.js">
 		
-		function convierteGrados(){
-
-			var grados = document.getElementById("gradosCelcius");
-			console.log(grados);
-			return grados * 9 /5;
-		}
+		
 	</script>
 	
 </body>
